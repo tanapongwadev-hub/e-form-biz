@@ -1,0 +1,76 @@
+name: Deploy to Digital Ocean
+
+on:
+  push:
+    branches: [prod]
+    tags: ["v*"]
+  workflow_dispatch:
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ghcr.io/bizaenterprise/eform-standalone
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    outputs:
+      image_digest: ${{ steps.build.outputs.digest }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: docker/login-action@v4
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GH_TOKEN }}
+
+      - uses: docker/metadata-action@v6
+        id: meta
+        with:
+          images: ${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=tag
+            type=sha
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+
+      - uses: docker/build-push-action@v7
+        id: build
+        with:
+          context: .
+          push: true
+          build-args: |
+            VITE_ENVIRONMENT=${{ vars.VITE_ENVIRONMENT || 'production' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+
+  deploy:
+    name: Deploy to Server
+    runs-on: ubuntu-latest
+    needs: publish
+    environment: production
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        env:
+          APP_IMAGE: ${{ env.IMAGE_NAME }}@${{ needs.publish.outputs.image_digest }}
+          GHCR_TOKEN: ${{ secrets.GH_TOKEN }}
+          GHCR_USERNAME: ${{ secrets.GH_USERNAME }}
+          PROJECT_PATH: /home/deploy/apps/eform-v2-prod
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USERNAME }}
+          key: ${{ secrets.DO_SSH_KEY }}
+          envs: APP_IMAGE,GHCR_TOKEN,GHCR_USERNAME,PROJECT_PATH
+          script: |
+            set -eu
+
+            # Login to GHCR on the server
+            printf '%s' "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USERNAME" --password-stdin
+
+            # Deploy the exact image built by the publish job
+            cd "$PROJECT_PATH"
+
+            docker pull "$APP_IMAGE"
+            docker tag "$APP_IMAGE" "$(docker compose config --images eform)"
+            docker compose up --no-build --force-recreate -d

@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>การเลิกการให้บริการด้านการสอบบัญชีหรือทำบัญชี</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://czp.dga.or.th/cportal/sdk/iu/v3/sdk.js"></script>
+    <script>
+      window.environment = "%VITE_ENVIRONMENT%";
+      window.eformConfig = {"draftFeature":false,"skipValidation":true,"attachmentAdditionalFields":{"file_applicant_3_month":{"Document_Type_ID":"1"},"image_authorization_id_card":{"Document_Type_ID":"2"},"OtherDoc":{"Document_Type_ID":"9"}}}
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="d-flex min-vh-100 flex-column justify-content-between">
+      <div>
+        <header id="bizportal-navbar">
+  <section class="bg-primary">
+    <div class="container d-print-none">
+      <div>
+        <p class="text-white text-end fs-6">
+          <small>
+            เว็บไซต์นี้อยู่ภายใต้การกำกับดูแลของสำนักนายกรัฐมนตรี
+          </small>
+        </p>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow p-1 mb-3">
+    <div class="container">
+      <div class="float-left">
+        <a class="navbar-brand" href="https://uat.bizportal.go.th">
+            <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAABWCAMAAADSW3WyAAAA9lBMVEX////+/v79/f36/P34+Pj1+fv39/fy9/jr8vXx8fHq8/fv7+/o7/Pg7fPn5+fb5+zX5OrW5OnX6O/g4ODS4efW5+/f39/Y2NjM4evX19fD19/C3OfB3OfPz8+31uPHx8evydSuydSu0N/AwMCt0N+/v7+cvMq4uLijytu3t7eZxNewsLCYxNevr6+LscGHrr+Hrr+PvtOoqKiOvtOnp6eFuM+goKCEuM6fn590obV2qb96ssuYmJh5sMh6ssqXl5dnmK5wrMeQkJBvrMaPj49sqMJglKpfk6pmpL5mpsOIiIhlpsKHh4dRiqJNh6BUlK9cob+AgIBUAO39AAAATnRSTlMAAgQHDhAQEhwcICAhMDAzOTo/P0BAQE9QUFVfYGBwcHJzf3+AgI6PkJCfn6Cgpqusr6+wsL+/wMDHy8/P0NDQ2d/f4ODi4+Tr7+/w8PikX7K+AAAD3ElEQVRo3u3Z6WPSMBQA8HgQldp6rTgclWmpA6HqGKxVcciGB8ew/f//GV/SNk1LKR30+sD7sh4p+ZHkvQBDQxmVIiyrHBLLKofEssohsaxySCyrHBIAGI0bV3JSrAMhTzI5KdZRvMRzFC3xHQjJRnES3lGkJOgoThJ2FCVZdxQjiXIUIYl25C/Z5ADJRZ6SzQ6Eqr38JHEOTiLSU4NtzpNzZjuezd5n7WASOeTwbWgBx2LmDpD8iHZYM5F9gpEzdzx69/Mf72i5uCvyecW7uKhk7Dj6dLtaRTlQhezOVWejblUzXR8wFCsSkQ70NpXp2O6gQxHjkOHqcdYObyhiHI1U0iTW4Q9FjAMW6g09EIfDNr055GJ/R2AoNjrkc8gS2ZsgI/gNBGJvx7PVWgQcE/p2Z3DpRkQZOo62OFi0uQUbeAWycN7m52C7X8hxDLd6KHOH0aJBd52PEQ4RpuwCZe/w8qV64Q1/wFGZWNZVJUcHPZmFHZXvu242uzsa7mXeAdO1EFG+Dnnd0d691qfpICPUQHk7eu4GwxwyX1Vyc5A3v+DXKcnYHsrVUX15cm6F8pakylUlNwcfPb6OyYFbrfwciwYq3nHVY4khGkbb+cNFI1NHjt/n8nc8sW37/t0c0isvhEIdps1i3q+VwgHRLdIxNWlMCUQr0OH1rSzh8YSrRFBVJSsHqsHjzWQOaGpm5kBj2x6UwTGIffX8HCb36pjUlMQOSYV4jdNxYD9hpL6TyH3JuwknCKvXpAWX6LTi0Mu0Ap2l4cAjeNzpt+n3pPoO6dpJ7ZBDGvnn/T0cXTIDqtqd294y7cDRsqNpGqkpHeYAxnig1RAUG1jRNik6hI2XtlmHKamPvXzbu56O6QzX4UjHbGDqnsMeC3yK+4vDTXYMkFEKjqU7Q1NuEWowDNh1TDGKdLBQ3Ku7OUyNhuItyXqgrE7dAYGLCtriqO3lCO8pMART/wzWiu46hI0OSb0kMUrVYQZqg+aeBTsOro9LbnKLcyi0f7Oj6eYyTYcedgxiHRjyfamwt5CeoxnocuDWhI2OJqt+rFE6DoHf/gWvl40OGLAx13iz4+mXP3dykImZS36t11G0AzPH3CfFOCAev/nw9TaxA0PNmKukG+WaVa91R1dAguSUm6a/K8U6SDx4fvr5dyIHkpbO9kmLrIQiHNhpQZ8lJXl0pp6NYMdJ4OAHZosDYVbuBxhFOdxkpc+yxiZO7KDx4vTb31+G86OXommR31okjWynHcnPXy3olXQTPug7z9Z1aKvDcd1p9BAa30vwf7F84uA4OA6Og+PgODiyCMP5Nbjo+A97ehxcO/BhcQAAAABJRU5ErkJggg==" alt="" width="90px">
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+        <main class="container">
+          <h1 class="text-center mt-4 text-primary">การเลิกการให้บริการด้านการสอบบัญชีหรือทำบัญชี</h1>
+
+          <form id="form_preview" class="simple_form mt-3" data-controller="eform" data-eform-target="form" novalidate="novalidate" action="#" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="AZ3tENr4yuH0_UCHNFsjPYd0fV_8dvj41VBXfqbIf-DFFHuE2q4AipcHV-4A0AW4wws9UluG43EKsce7tXjwGA" autocomplete="off" />
+            <div class="row">
+
+
+
+                  <fieldset id="heading_1-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    <h2 class="text-primary" style="">
+  ข้อมูลทั่วไป
+</h2>
+                  </fieldset>
+
+
+                    <fieldset id="basic_information_1-citizen-container"
+                              class="container col-md-12"
+                              data-eform-identity-types="Citizen">
+                      <div data-controller="basic-information-field">
+
+    <div class="row basic_information_field">
+      <div class="col-md-12">
+        <h4 class="text-primary">ข้อมูลบุคคลผู้ขออนุญาต</h4>
+      </div>
+
+      <div class="col-md-4">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">วัน/เดือน/ปี/ที่ยื่นคำขอ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="Applicant[WriteDate]" value="10 กันยายน 2569" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+      </div>
+
+      <div class="col-md-4"></div>
+
+      <div class="col-md-4">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="applicant_write_at">เขียนที่ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" id="applicant_write_at" name="Applicant[WriteAt]" value="Biz Portal" readonly="readonly" disabled="disabled" type="text" /></div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">ขออนุญาตในฐานะบุคคลธรรมดาหรือนิติบุคคล <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="Applicant[IdentityTypeTitle]" value="บุคคลธรรมดา" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+      </div>
+
+      <div class="col-md-12 p-0 m-0"></div>
+
+        <div class="col-md-2">
+            <div class="mb-3 form-group select required _basic_information"><label class="form-label select required" for="basic_information">คำนำหน้า <abbr title="required">*</abbr></label><select class="form-select form-select-sm select required" name="Applicant[Title]" data-action="change-&gt;basic-information-field#changeTitle" id="basic_information"><option value="" label=" "></option>
+<option value="นาย">นาย</option>
+<option value="นางสาว">นางสาว</option>
+<option value="นาง">นาง</option>
+<option value="ว่าที่ร้อยตรี">ว่าที่ร้อยตรี</option>
+<option value="Sir">Sir</option>
+<option value="Doctor">Doctor</option>
+<option value="Professor">Professor</option>
+<option value="พ.ต.">พ.ต.</option>
+<option value="พ.ท.">พ.ท.</option>
+<option value="พ.อ.">พ.อ.</option>
+<option value="พ.จ.อ.">พ.จ.อ.</option>
+<option value="จ.ส.ต.">จ.ส.ต.</option>
+<option value="ร้อยตรี">ร้อยตรี</option>
+<option value="ส.ต.">ส.ต.</option>
+<option value="พลฯ">พลฯ</option>
+<option value="ร.ต.ต.">ร.ต.ต.</option>
+<option value="พ.อ.อ.">พ.อ.อ.</option>
+<option value="ร้อยตำรวจโท">ร้อยตำรวจโท</option>
+<option value="จ่าอากาศเอก">จ่าอากาศเอก</option>
+<option value="ร.ต">ร.ต</option>
+<option value="ด.ต.">ด.ต.</option>
+<option value="น.อ.">น.อ.</option>
+<option value="จ.อ.">จ.อ.</option>
+<option value="บริษัท">บริษัท</option>
+<option value="ร.ท.">ร.ท.</option>
+<option value="ร.ต.อ">ร.ต.อ</option>
+<option value="พ.ต.อ.">พ.ต.อ.</option>
+<option value="อื่นๆ">อื่นๆ</option></select></div>
+
+              <div data-basic-information-field-target="titleOther" class="mb-3 form-group string required _basic_information d-none"><div><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required" placeholder="ระบุคำนำหน้า" name="Applicant[TitleOther]" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">ชื่อ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="FirstName" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+        </div>
+        <div class="col-md-3">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">นามสกุล <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="LastName" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+          <div class="mb-3 form-group hidden _basic_information"><div><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm hidden" name="Applicant[FirstName]" autocomplete="off" type="hidden" id="basic_information" /></div>
+          <div class="mb-3 form-group hidden _basic_information"><div><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm hidden" name="Applicant[LastName]" autocomplete="off" type="hidden" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">เลขประจำตัวประชาชน 13 หลัก <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="CitizenId" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-4">
+          <div data-controller="datepicker" class="mb-3 form-group string required _basic_information"><label class="form-label string required" for="basic_information">วัน เดือน ปีเกิด <abbr title="required">*</abbr></label><div class="input-group input-group-sm"><input class="form-control form-control-sm string required" data-datepicker-target="input" data-action="cable-ready:after-morph@document-&gt;datepicker#connect change-&gt;basic-information-field#calculateAge" name="Applicant[BirthDate]" type="text" id="basic_information" /><span class="input-group-text" data-datepicker-target="toggle"><i class="bi bi-calendar3"></i></span></div></div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="mb-3 form-group string required _basic_information"><div><label class="form-label string required" for="basic_information">อายุ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required" name="Applicant[Age]" onkeypress="return onlyNumber(event)" maxlength="2" data-basic-information-field-target="age" size="2" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="mb-3 form-group string required readonly _basic_information"><div><label class="form-label string required" for="basic_information">สัญชาติ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly" name="Applicant[Nationality]" value="ไทย" readonly="readonly" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="mb-3 form-group string required readonly _basic_information"><div><label class="form-label string required" for="basic_information">เชื้อชาติ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly" name="Applicant[Race]" value="ไทย" readonly="readonly" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="mb-3 form-group select required _basic_information"><label class="form-label select required" for="religion">ศาสนา <abbr title="required">*</abbr></label><select class="form-select form-select-sm select required select2" id="religion" name="Applicant[Religion]"><option value=""></option>
+<option value="พุทธ">พุทธ</option>
+<option value="อิสลาม">อิสลาม</option>
+<option value="คริสต์">คริสต์</option>
+<option value="พราหมณ์-ฮินดู">พราหมณ์-ฮินดู</option>
+<option value="ซิกข์">ซิกข์</option>
+<option value="ยิว">ยิว</option>
+<option value="เชน">เชน</option>
+<option value="โซโรอัสเตอร์">โซโรอัสเตอร์</option>
+<option value="บาไฮ">บาไฮ</option>
+<option value="ไม่ระบุ">ไม่ระบุ</option></select></div>
+        </div>
+
+
+
+
+
+
+
+      <div class="col-md-12">
+        <h4 class="text-primary">ข้อมูลที่อยู่ตามบัตรประชาชน</h4>
+      </div>
+
+        <div class="col-md-2">
+          <div class="mb-3 form-group string required _basic_information"><div><label class="form-label string required" for="basic_information">เลขที่ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required" name="Applicant[Address][AddressNo]" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="mb-3 form-group string optional _basic_information"><div><label class="form-label string optional" for="basic_information">หมู่ที่</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional" name="Applicant[Address][VillageNo]" onkeypress="return onlyNumber(event)" maxlength="2" size="2" type="text" id="basic_information" /></div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group string optional _basic_information"><div><label class="form-label string optional" for="basic_information">ตรอก/ซอย</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional" name="Applicant[Address][Soi]" type="text" id="basic_information" /></div>
+        </div>
+
+
+
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group string optional _basic_information"><div><label class="form-label string optional" for="basic_information">ถนน</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional" name="Applicant[Address][Road]" type="text" id="basic_information" /></div>
+        </div>
+
+      <div class="col-md-12"></div>
+
+        <div class="col-md-6">
+
+          <div data-controller="select-search-field" data-select-search-field-endpoint-url-value="/provinces.json" data-select-search-field-endpoint-value-key-value="province" data-select-search-field-endpoint-title-key-value="province" data-select-search-field-onchange-endpoint-url-value="/amphoes" data-select-search-field-onchange-endpoint-value-key-value="amphoe" data-select-search-field-onchange-endpoint-title-key-value="amphoe" data-select-search-field-onchange-to-selector-value="#amphoe" data-action="cable-ready:after-morph@document-&gt;select-search-field#initSelect2" class="mb-3 form-group select required _basic_information"><label class="form-label select required" for="province">จังหวัด <abbr title="required">*</abbr></label><select class="form-select form-select-sm select required select2" id="province" name="Applicant[Address][Province]" data-select-search-field-target="select"><option value="" label=" "></option>
+</select></div>
+        </div>
+
+        <div class="col-md-6">
+          <div data-controller="select-search-field" data-select-search-field-endpoint-url-value="/amphoes.json" data-select-search-field-endpoint-value-key-value="amphoe" data-select-search-field-endpoint-title-key-value="amphoe" data-select-search-field-onchange-endpoint-url-value="/tambons" data-select-search-field-province-selector-value="#province" data-select-search-field-amphoe-selector-value="" data-select-search-field-onchange-endpoint-value-key-value="tambon" data-select-search-field-onchange-endpoint-title-key-value="tambon" data-select-search-field-onchange-to-selector-value="#tambon" data-action="cable-ready:after-morph@document-&gt;select-search-field#initSelect2" class="mb-3 form-group select required _basic_information"><label class="form-label select required" for="amphoe">อำเภอ/เขต <abbr title="required">*</abbr></label><select class="form-select form-select-sm select required select2" id="amphoe" name="Applicant[Address][District]" data-select-search-field-target="select"><option value="" label=" "></option>
+</select></div>
+        </div>
+
+        <div class="col-md-6">
+          <div data-controller="select-search-field" data-select-search-field-endpoint-url-value="/tambons.json" data-select-search-field-endpoint-value-key-value="tambon" data-select-search-field-endpoint-title-key-value="tambon" data-select-search-field-province-selector-value="#province" data-select-search-field-amphoe-selector-value="#amphoe" data-select-search-field-onchange-endpoint-url-value="/postcodes" data-select-search-field-onchange-endpoint-value-key-value="postcode" data-select-search-field-onchange-endpoint-title-key-value="postcode" data-select-search-field-onchange-to-selector-value="#postcode" data-action="cable-ready:after-morph@document-&gt;select-search-field#initSelect2" class="mb-3 form-group select required _basic_information"><label class="form-label select required" for="tambon">ตำบล/แขวง <abbr title="required">*</abbr></label><select class="form-select form-select-sm select required select2" id="tambon" name="Applicant[Address][SubDistrict]" data-select-search-field-target="select"><option value="" label=" "></option>
+</select></div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="mb-3 form-group string required readonly _basic_information"><div><label class="form-label string required" for="postcode">รหัสไปรษณีย์ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly" id="postcode" name="Applicant[Address][PostCode]" maxlength="5" onkeypress="return onlyNumber(event)" readonly="readonly" size="5" type="text" /></div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="mb-3 form-group string required _basic_information"><div><label class="form-label string required" for="basic_information">โทรศัพท์มือถือ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required" name="Applicant[MobilePhone]" maxlength="12" onkeydown="enforceFormat(event)" onkeyup="formatToPhone(event)" size="12" type="text" id="basic_information" /></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+                    </fieldset>
+
+                    <fieldset id="basic_information_1-juristic-container"
+                              class="container col-md-12 d-none"
+                              data-eform-identity-types="Juristic"
+                              disabled>
+                      <div data-controller="basic-information-field">
+
+
+    <div class="row basic_information_field">
+      <div class="col-md-12">
+        <h4 class="text-primary">ข้อมูลนิติบุคคล</h4>
+      </div>
+
+      <div class="col-md-4">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">วัน/เดือน/ปี/ที่ยื่นคำขอ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="Applicant[WriteDate]" value="10 กันยายน 2569" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+      </div>
+
+      <div class="col-md-4"></div>
+
+      <div class="col-md-4">
+          <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">เขียนที่ <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="Applicant[WriteAt]" value="Biz Portal" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mb-3 form-group string required readonly disabled _basic_information"><div><label class="form-label string required disabled" for="basic_information">ขออนุญาตในฐานะบุคคลธรรมดาหรือนิติบุคคล <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string required readonly disabled form-control-disabled" name="Applicant[IdentityTypeTitle]" value="นิติบุคคล" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+      </div>
+
+      <div class="col-md-12 p-0 m-0"></div>
+
+        <div class="col-md-6">
+          <div class="mb-3 form-group string optional readonly _basic_information"><div><label class="form-label string optional" for="basic_information">ชื่อนิติบุคคล ภาษาไทย</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional readonly form-control-disabled" name="Applicant[Name]" readonly="readonly" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="mb-3 form-group string optional readonly _basic_information"><div><label class="form-label string optional" for="basic_information">ชื่อนิติบุคคล ภาษาอังกฤษ</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional readonly form-control-disabled" name="Applicant[NameEn]" value="-" readonly="readonly" type="text" id="basic_information" /></div>
+        </div>
+
+
+      <div class="col-md-3">
+        <div class="mb-3 form-group string optional readonly _basic_information"><div><label class="form-label string optional" for="basic_information">ประเภทนิติบุคคล</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional readonly form-control-disabled" name="Applicant[JuristicType]" readonly="readonly" type="text" id="basic_information" /></div>
+      </div>
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group string optional readonly _basic_information"><div><label class="form-label string optional" for="basic_information">เลขทะเบียนนิติบุคคล 13 หลัก</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional readonly form-control-disabled" name="Applicant[JuristicId]" readonly="readonly" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group string optional readonly _basic_information"><div><label class="form-label string optional" for="basic_information">เงินทุนจดทะเบียน (บาท)</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional readonly form-control-disabled" name="Applicant[RegisterCapital]" readonly="readonly" type="text" id="basic_information" /></div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group string optional readonly disabled _basic_information"><div><label class="form-label string optional disabled" for="basic_information">วัน/เดือน/ปี ที่จดทะเบียนนิติบุคคล</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string optional readonly disabled form-control-disabled" name="RegisterDate" readonly="readonly" disabled="disabled" type="text" id="basic_information" /></div>
+          <div class="mb-3 form-group hidden _basic_information"><div><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm hidden" name="Applicant[RegisterDate]" autocomplete="off" type="hidden" id="basic_information" /></div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="mb-3 form-group email optional _basic_information"><div><label class="form-label email optional" for="basic_information">อีเมล (ที่ใช้สำหรับติดต่อ)</label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm string email optional" name="Applicant[Email]" pattern="[^@ ]+@[^@ ]+.[^@ ]+" type="email" id="basic_information" /></div>
+        </div>
+
+      <div class="col-md-12">
+        <h4 class="text-primary">ข้อมูลที่อยู่ตามทะเบียนนิติบุคคล</h4>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="col-md-12 p-0 m-0"></div>
+
+
+
+
+
+
+
+
+      <div class="col-md-12" data-eform-committee-list>
+      </div>
+
+
+    </div>
+</div>
+
+                    </fieldset>
+
+
+
+                  <fieldset id="ChageInformation-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    <h2 class="text-primary" style="">
+  ข้อมูลการจดทะเบียนเลิกให้บริการด้านการสอบบัญชีหรือด้านการทำบัญชี
+</h2>
+                  </fieldset>
+
+
+
+                  <fieldset id="content_3-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                      <div data-controller="content-field" style="height: unset; overflow-y: scroll" class="d-flex">
+    <div>ข้าพเจ้าขอแก้ไขข้อมูลนิติบุคคลที่ได้แจ้งจดทะเบียนไว้กับสภาวิชาชีพบัญชีตามมาตรา 11 และมาตรา 78 พระราชบัญญัติวิชาชีพบัญชี พ.ศ. 2547 โดยมีรายละเอียดดังนี้(กรุณาเลือกหัวข้อที่มีความประสงค์)</div>
+  </div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="CancelType[Topic]-container"
+                            class="container col-md-6  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    
+<div id="CancelType[Topic]-container" class="container col-md-12" style="z-index: 9998">
+  <fieldset
+    data-controller="radio-buttons-field"
+    data-radio-buttons-field-options-value="[{&quot;id&quot;:19136,&quot;label&quot;:&quot;เลิกกิจการ (โปรดระบุเหตุผล)&quot;,&quot;value&quot;:&quot;เลิกกิจการ (โปรดระบุเหตุผล)&quot;,&quot;form_field_id&quot;:96590,&quot;created_at&quot;:&quot;2025-03-05T23:39:27.010+07:00&quot;,&quot;updated_at&quot;:&quot;2025-03-05T23:41:09.153+07:00&quot;,&quot;show_selector&quot;:&quot;#Detail&quot;},{&quot;id&quot;:19135,&quot;label&quot;:&quot;เปลี่ยนแปลงวัตถุประสงค์ (โปรดระบุเหตุผล)&quot;,&quot;value&quot;:&quot;เปลี่ยนแปลงวัตถุประสงค์ (โปรดระบุเหตุผล)&quot;,&quot;form_field_id&quot;:96590,&quot;created_at&quot;:&quot;2025-03-05T23:39:27.009+07:00&quot;,&quot;updated_at&quot;:&quot;2025-03-05T23:41:09.154+07:00&quot;,&quot;show_selector&quot;:&quot;#Detail&quot;},{&quot;id&quot;:19134,&quot;label&quot;:&quot;อื่น ๆ (โปรดระบุเหตุผล)&quot;,&quot;value&quot;:&quot;อื่น ๆ (โปรดระบุเหตุผล)&quot;,&quot;form_field_id&quot;:96590,&quot;created_at&quot;:&quot;2025-03-05T23:39:27.007+07:00&quot;,&quot;updated_at&quot;:&quot;2025-03-05T23:41:09.155+07:00&quot;,&quot;show_selector&quot;:&quot;#Detail&quot;}]"
+    class="mb-3 form-group radio_buttons _radio_buttons d-flex flex-column required">
+    <legend class="col-form-label pt-0">ขอยกเลิกการจดทะเบียนนิติบุคคล เนื่องจาก *</legend>
+    <input type="hidden" name="CancelType[Topic]" value="" autocomplete="off">
+      <div class="form-check">
+        <input class="form-check-input radio_buttons-first radio_buttons required disabled " name="CancelType[Topic]"
+          data-show-selector="#Detail"
+          data-action="change->radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform" type="radio" value="เลิกกิจการ (โปรดระบุเหตุผล)" id="radio_button_19136"  required>
+        <label class="form-check-label collection_radio_buttons" for="radio_button_19136">
+          เลิกกิจการ (โปรดระบุเหตุผล)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input  radio_buttons required disabled " name="CancelType[Topic]"
+          data-show-selector="#Detail"
+          data-action="change->radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform" type="radio" value="เปลี่ยนแปลงวัตถุประสงค์ (โปรดระบุเหตุผล)" id="radio_button_19135"  required>
+        <label class="form-check-label collection_radio_buttons" for="radio_button_19135">
+          เปลี่ยนแปลงวัตถุประสงค์ (โปรดระบุเหตุผล)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input  radio_buttons required disabled " name="CancelType[Topic]"
+          data-show-selector="#Detail"
+          data-action="change->radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform" type="radio" value="อื่น ๆ (โปรดระบุเหตุผล)" id="radio_button_19134"  required>
+        <label class="form-check-label collection_radio_buttons" for="radio_button_19134">
+          อื่น ๆ (โปรดระบุเหตุผล)
+        </label>
+      </div>
+  </fieldset>
+</div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="CancelType[Detail]-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    <div class="mb-3 form-group text required _text"><div><label class="form-label text required" for="CancelType[Detail]">กรุณาระบุเหตุผล <abbr title="required">*</abbr></label><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><textarea class="form-control form-control-sm text required" id="CancelType[Detail]" name="CancelType[Detail]" rows="" required="required" aria-required="true" placeholder="">
+</textarea></div>
+                  </fieldset>
+
+
+
+                  <fieldset id="content_78-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                      <div data-controller="content-field" style="height: unset; overflow-y: scroll" class="d-flex">
+    <div>(แนบหลักฐานที่แสดงว่าได้ยกเลิกการจดทะเบียนนิติบุคคล หรือยกเลิกการให้บริการด้านการทำบัญชี หรือด้านการสอบบัญชี)</div>
+  </div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="heading_84-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    <h2 class="text-primary" style="">
+  หลักฐานการจดทะเบียนเลิกให้บริการด้านการสอบบัญชีหรือด้านการทำบัญชี พร้อมรับรองสำเนาถูกต้องและประทับตรา (ถ้ามี)
+</h2>
+                  </fieldset>
+
+
+
+                  <fieldset id="file_applicant_3_month-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    
+    <div>
+      <div
+        class="row py-3 border mx-0 file-field
+          border-dark
+          
+          "
+        data-controller="file-field"
+        data-file-field-endpoint-value="https://bizportal-core-api-dev.opendata-dga.cloud"
+        data-file-field-name-value="file_applicant_3_month"
+        data-file-field-label-value="สำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล มีอายุไม่เกิน 3 เดือน"
+        data-file-field-crop-enabled-value="false"
+        data-file-field-aspect-ratio-value="0.8"
+        data-file-field-accept-files-value=".pdf,.jpg,.jpeg">
+        <div class="col-md-7">
+          <div class="row mx-0">
+            <div class="col-12">
+              <p class="fs-5 fw-bold">
+                สำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล มีอายุไม่เกิน 3 เดือน
+                  <abbr title="required">*</abbr>
+              </p>
+
+            </div>
+            <div class="col-12">
+              <img data-file-field-target="thumbnail"  alt="" style="width: 350px"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div data-file-field-target="preview" class="row preview d-none">
+            <div class="col-md-2 col-12">
+              <img class="d-none" width="50px" height="50px" data-file-field-target="zip" src="/images/zip.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="png" src="/images/png.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="jpg" src="/images/jpg.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="pdf" src="/images/pdf.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="doc" src="/images/doc.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="docx" src="/images/docx.png" />
+            </div>
+            <div class="col-md-7 col-12">
+              <a  data-file-field-target="filename" class="text-primary fs-5" target="_blank">
+                
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <button type="button" data-action="click->file-field#removeFile click->file-field#removeAllFile" class="btn btn-danger">
+                <i class="bi bi-trash"></i> ลบ
+              </button>
+            </div>
+            <div class="col-md-12">
+              <p>ขนาดไฟล์ : <span data-file-field-target="fileSize">0 bytes</span></p>
+              <p>อัปโหลดเมื่อ : <span data-file-field-target="uploadedAt"></span></p>
+            </div>
+          </div>
+          <div class="row items " data-file-field-target="input">
+            <div class="col-auto">
+              <div data-file-field-target="formGroup">
+                  <div>
+                    <input type="hidden" name="ApplicationAttachments[][FileTypeCode]" value="file_applicant_3_month" >
+                  </div>
+              </div>
+
+              <label for="file_applicant_3_month" class="btn btn-outline-dark">
+                <i class="bi bi-folder-fill"></i> เลือกเอกสาร
+                <input class="d-none" name="ApplicationAttachments[][file]" id="file_applicant_3_month" type="text" />
+              </label>
+
+
+            </div>
+            <div class="col-auto align-self-center d-none" data-file-field-target="progressContainer">
+              <p class="mb-0 fs-5 fw-normal">
+                กำลังดำเนินการ <span data-file-field-target="progress"></span>
+              </p>
+            </div>
+          </div>
+          <p class="text-danger mt-2">
+            <small>
+              รองรับเอกสารชนิด .pdf,.jpg,.jpeg ที่มีขนาดไม่เกิน 50 MB
+            </small>
+          </p>
+        </div>
+
+        <div class="modal fade" id="cropperModal" tabindex="-1" aria-labelledby="cropperModalLabel" aria-hidden="true" data-file-field-target="cropperModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="" data-file-field-target="cropperImage" class="w-50">
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-success" data-action="click->file-field#getCroppedData">ตัดภาพ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cropperPreviewModal" tabindex="-1" aria-labelledby="cropperPreviewModalLabel" aria-hidden="true" data-file-field-target="cropperPreviewModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="" data-file-field-target="cropperPreviewImage" class="w-50">
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-primary" data-action="click->file-field#uploadCroppedImage">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="image_authorization_id_card-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    
+    <div>
+      <div
+        class="row py-3 border mx-0 file-field
+          border-dark
+          
+          "
+        data-controller="file-field"
+        data-file-field-endpoint-value="https://bizportal-core-api-dev.opendata-dga.cloud"
+        data-file-field-name-value="image_authorization_id_card"
+        data-file-field-label-value="สำเนาบัตรประจำตัวประชาชนของกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนาม"
+        data-file-field-crop-enabled-value="false"
+        data-file-field-aspect-ratio-value="0.8"
+        data-file-field-accept-files-value=".pdf,.png,.jpg,.jpeg,.zip,.doc,.docx">
+        <div class="col-md-7">
+          <div class="row mx-0">
+            <div class="col-12">
+              <p class="fs-5 fw-bold">
+                สำเนาบัตรประจำตัวประชาชนของกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนาม
+                  <abbr title="required">*</abbr>
+              </p>
+
+            </div>
+            <div class="col-12">
+              <img data-file-field-target="thumbnail"  alt="" style="width: 350px"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div data-file-field-target="preview" class="row preview d-none">
+            <div class="col-md-2 col-12">
+              <img class="d-none" width="50px" height="50px" data-file-field-target="zip" src="/images/zip.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="png" src="/images/png.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="jpg" src="/images/jpg.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="pdf" src="/images/pdf.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="doc" src="/images/doc.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="docx" src="/images/docx.png" />
+            </div>
+            <div class="col-md-7 col-12">
+              <a  data-file-field-target="filename" class="text-primary fs-5" target="_blank">
+                
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <button type="button" data-action="click->file-field#removeFile click->file-field#removeAllFile" class="btn btn-danger">
+                <i class="bi bi-trash"></i> ลบ
+              </button>
+            </div>
+            <div class="col-md-12">
+              <p>ขนาดไฟล์ : <span data-file-field-target="fileSize">0 bytes</span></p>
+              <p>อัปโหลดเมื่อ : <span data-file-field-target="uploadedAt"></span></p>
+            </div>
+          </div>
+          <div class="row items " data-file-field-target="input">
+            <div class="col-auto">
+              <div data-file-field-target="formGroup">
+                  <div>
+                    <input type="hidden" name="ApplicationAttachments[][FileTypeCode]" value="image_authorization_id_card" >
+                  </div>
+              </div>
+
+              <label for="image_authorization_id_card" class="btn btn-outline-dark">
+                <i class="bi bi-folder-fill"></i> เลือกเอกสาร
+                <input class="d-none" name="ApplicationAttachments[][file]" id="image_authorization_id_card" type="text" />
+              </label>
+
+
+            </div>
+            <div class="col-auto align-self-center d-none" data-file-field-target="progressContainer">
+              <p class="mb-0 fs-5 fw-normal">
+                กำลังดำเนินการ <span data-file-field-target="progress"></span>
+              </p>
+            </div>
+          </div>
+          <p class="text-danger mt-2">
+            <small>
+              รองรับเอกสารชนิด .pdf,.png,.jpg,.jpeg,.zip,.doc,.docx ที่มีขนาดไม่เกิน 50 MB
+            </small>
+          </p>
+        </div>
+
+        <div class="modal fade" id="cropperModal" tabindex="-1" aria-labelledby="cropperModalLabel" aria-hidden="true" data-file-field-target="cropperModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="" data-file-field-target="cropperImage" class="w-50">
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-success" data-action="click->file-field#getCroppedData">ตัดภาพ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cropperPreviewModal" tabindex="-1" aria-labelledby="cropperPreviewModalLabel" aria-hidden="true" data-file-field-target="cropperPreviewModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="" data-file-field-target="cropperPreviewImage" class="w-50">
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-primary" data-action="click->file-field#uploadCroppedImage">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="OtherDoc-container"
+                            class="container col-md-12  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                    
+    <div>
+      <div
+        class="row py-3 border mx-0 file-field
+          border-dark
+          
+          "
+        data-controller="file-field"
+        data-file-field-endpoint-value="https://bizportal-core-api-dev.opendata-dga.cloud"
+        data-file-field-name-value="OtherDoc"
+        data-file-field-label-value="เอกสารอื่น ๆ "
+        data-file-field-crop-enabled-value="false"
+        data-file-field-aspect-ratio-value="0.8"
+        data-file-field-accept-files-value=".pdf,.png,.jpg,.jpeg,.zip,.doc,.docx">
+        <div class="col-md-7">
+          <div class="row mx-0">
+            <div class="col-12">
+              <p class="fs-5 fw-bold">
+                เอกสารอื่น ๆ 
+              </p>
+
+            </div>
+            <div class="col-12">
+              <img data-file-field-target="thumbnail"  alt="" style="width: 350px"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div data-file-field-target="preview" class="row preview d-none">
+            <div class="col-md-2 col-12">
+              <img class="d-none" width="50px" height="50px" data-file-field-target="zip" src="/images/zip.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="png" src="/images/png.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="jpg" src="/images/jpg.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="pdf" src="/images/pdf.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="doc" src="/images/doc.png" />
+              <img class="d-none" width="50px" height="50px" data-file-field-target="docx" src="/images/docx.png" />
+            </div>
+            <div class="col-md-7 col-12">
+              <a  data-file-field-target="filename" class="text-primary fs-5" target="_blank">
+                
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <button type="button" data-action="click->file-field#removeFile click->file-field#removeAllFile" class="btn btn-danger">
+                <i class="bi bi-trash"></i> ลบ
+              </button>
+            </div>
+            <div class="col-md-12">
+              <p>ขนาดไฟล์ : <span data-file-field-target="fileSize">0 bytes</span></p>
+              <p>อัปโหลดเมื่อ : <span data-file-field-target="uploadedAt"></span></p>
+            </div>
+          </div>
+          <div class="row items " data-file-field-target="input">
+            <div class="col-auto">
+              <div data-file-field-target="formGroup">
+                  <div>
+                    <input type="hidden" name="ApplicationAttachments[][FileTypeCode]" value="OtherDoc" >
+                  </div>
+              </div>
+
+              <label for="OtherDoc" class="btn btn-outline-dark">
+                <i class="bi bi-folder-fill"></i> เลือกเอกสาร
+                <input class="d-none" name="ApplicationAttachments[][file]" id="OtherDoc" type="text" />
+              </label>
+
+
+            </div>
+            <div class="col-auto align-self-center d-none" data-file-field-target="progressContainer">
+              <p class="mb-0 fs-5 fw-normal">
+                กำลังดำเนินการ <span data-file-field-target="progress"></span>
+              </p>
+            </div>
+          </div>
+          <p class="text-danger mt-2">
+            <small>
+              รองรับเอกสารชนิด .pdf,.png,.jpg,.jpeg,.zip,.doc,.docx ที่มีขนาดไม่เกิน 50 MB
+            </small>
+          </p>
+        </div>
+
+        <div class="modal fade" id="cropperModal" tabindex="-1" aria-labelledby="cropperModalLabel" aria-hidden="true" data-file-field-target="cropperModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="" data-file-field-target="cropperImage" class="w-50">
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-success" data-action="click->file-field#getCroppedData">ตัดภาพ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cropperPreviewModal" tabindex="-1" aria-labelledby="cropperPreviewModalLabel" aria-hidden="true" data-file-field-target="cropperPreviewModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="" data-file-field-target="cropperPreviewImage" class="w-50">
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-primary" data-action="click->file-field#uploadCroppedImage">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="js_292-container"
+                            class="container col-md-6  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                      <div>
+    <div id="js_292" class="d-none">null</div>
+    <script>
+        document.addEventListener("eform:ready", () => {
+      try {
+        function loadScriptStart() {
+    setTimeout(() => {
+        $(document).ready(function () {
+            start1();
+            $('div h4').each(function () {
+                if ($(this).text().includes('รายชื่อคณะกรรมการ/รายชื่อหุ้นส่วน')) {
+                    $(this).parent().remove();
+                }
+            });
+            $('h4').each(function () {
+                if ($(this).text().includes('ข้อมูลที่อยู่ กรรมการผู้จัดการ/ห้างหุ้นส่วนผู้จัดการ')) {
+                    $(this).parent().remove();
+                }
+            });
+            $('h4').each(function () {
+                if ($(this).text().includes('ข้อมูลที่อยู่ตามทะเบียนนิติบุคคล')) {
+                    $(this).parent().remove();
+                }
+            });
+            $('h5').each(function () {
+                if ($(this).text().includes('ลำดับของกรรมการ 1')) {
+                    $(this).parent().parent().parent().remove();
+                }
+            });
+            // close jur zone //
+            var pElement = $('p.fs-5.fw-bold').filter(function () {
+                return $(this).text().includes('หนังสือรับรองนิติบุคคล');
+            });
+            if (pElement.length > 0) {
+                //$('#file_applicant_3_month-container').addClass('d-none')
+                $('#file_applicant_3_month-container').remove();
+            }
+ 
+
+        });
+
+    }, 400);
+
+}
+
+function submitFormData(btnSubmitData) {
+    $(btnSubmitData).attr("type", "submit");
+    $(btnSubmitData).off("click");
+    $(btnSubmitData).click();
+    start1()
+    setTimeout(() => {
+        /////
+    }, 1200);
+}
+function start1() {
+
+    var btnSubmitData = $('input[type="submit"][name="commit"][value="ส่งคำร้อง"]');
+    if (btnSubmitData) {
+        $(btnSubmitData).attr("type", "button");
+        $(btnSubmitData).on("click", function () {
+            ///// check validate /////
+
+            let isCompleted = true;
+            let checkFocus = true; // ให้ focus ที่ละตัว โดยทำจากบนสุดก่อน
+            const myForm = document.getElementsByClassName("simple_form");
+
+            const Applicant = document.getElementsByName("Applicant[Email]")[0];
+            if ($.trim($(Applicant).val()) == "" && $(Applicant).is(':visible')) {
+                $(Applicant).attr('tabindex', '40'); $(Applicant).siblings('label').addClass("text-danger");
+                $(Applicant).parent().find('label').addClass("text-danger");
+                if (checkFocus) { Applicant.focus(); checkFocus = false; isCompleted = false; }
+            } else {
+                $(Applicant).parent().find('label').removeClass("text-danger");
+            }
+
+            const ApplicantEmail = document.getElementsByName("Applicant[Email]");
+            const ApplicantEmail0 = ApplicantEmail[0];
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (ApplicantEmail0) {
+                if (!emailRegex.test(ApplicantEmail0.value)) {
+                    $(ApplicantEmail0).attr('tabindex', '40'); $(ApplicantEmail0).siblings('label').addClass("text-danger");
+                    $(ApplicantEmail0).parent().find('label').addClass("text-danger");
+                    if (checkFocus) { ApplicantEmail0.focus(); checkFocus = false; isCompleted = false; }
+                }
+            } else {
+                $(ApplicantEmail0).parent().find('label').removeClass("text-danger");
+            }
+
+            const CancelType = document.querySelector('input[name="CancelType[Topic]"]:checked');
+            if (!CancelType && $('input[name="CancelType[Topic]"]').is(':visible')) {
+                $('input[name="CancelType[Topic]"]').attr('tabindex', '40'); $('input[name="CancelType[Topic]"]').siblings('label').addClass("text-danger");
+                $('input[name="CancelType[Topic]"]').parent().find('label').addClass("text-danger");
+                if (checkFocus) { $('input[name="CancelType[Topic]"]')[1].focus(); checkFocus = false; isCompleted = false; }
+            } else {
+                $('input[name="CancelType[Topic]"]').parent().find('label').removeClass("text-danger");
+            }
+
+            const CancelType1 = document.getElementsByName("CancelType[Detail]")[0];
+            if ($.trim($(CancelType1).val()) == "" && $(CancelType1).is(':visible')) {
+                $(CancelType1).attr('tabindex', '40'); $(CancelType1).siblings('label').addClass("text-danger");
+                $(CancelType1).parent().find('label').addClass("text-danger");
+                if (checkFocus) { CancelType1.focus(); checkFocus = false; isCompleted = false; }
+            } else {
+                $(CancelType1).parent().find('label').removeClass("text-danger");
+            }
+
+            ////////////////////////////////////////////
+
+            var upload3 = $('[data-file-field-name-value="file_applicant_3_month"]');
+            if (upload3 && $(upload3).is(':visible')) {
+                var aaa = upload3.find('[data-file-field-target="preview"]')
+                var a = upload3.find('p')
+                if (aaa.hasClass('d-none')) {
+                    console.log(a.html())
+                    a.attr('tabindex', '40');
+                    a.addClass("text-danger");
+                    if (checkFocus) {
+                        a.focus();
+                        checkFocus = false;
+                    }
+                    isCompleted = false;
+                } else {
+                    a.removeClass("text-danger");
+                }
+            }
+
+            var upload4 = $('[data-file-field-name-value="image_authorization_id_card"]');
+            if (upload4 && $(upload4).is(':visible')) {
+                var aaa = upload4.find('[data-file-field-target="preview"]')
+                var a = upload4.find('p')
+                if (aaa.hasClass('d-none')) {
+                    console.log(a.html())
+                    a.attr('tabindex', '40');
+                    a.addClass("text-danger");
+                    if (checkFocus) {
+                        a.focus();
+                        checkFocus = false;
+                    }
+                    isCompleted = false;
+                } else {
+                    a.removeClass("text-danger");
+                }
+            }
+
+            if (!$('#acceptTermOfService').is(':checked')) {
+                if (checkFocus) {
+                    $('#acceptTermOfService').focus()
+                    alert("กรุณาคลิกยอมรับเงื่อนไขการให้บริการ");
+                }
+                isCompleted = false;
+            }
+
+            /////////////////////////
+            //alert("click submit");
+            //isCompleted = false;
+
+            ////////////////////////////////
+            ///// final check validate /////
+            if (isCompleted) {
+                console.log("completed");
+                submitFormData(btnSubmitData)
+            }
+            ///// final check validate /////
+            ////////////////////////////////
+        })
+    }
+
+}
+
+document.addEventListener('afterReflex', loadScriptStart);
+document.addEventListener('formError', loadScriptStart);
+      } catch(error) {
+        console.log(error)
+      }
+        })
+    </script>
+  </div>
+
+                  </fieldset>
+
+
+
+                  <fieldset id="hdn1-container"
+                            class="container col-md-6  "
+                            data-eform-identity-types="Citizen Juristic"
+                            >
+                      <div class="mb-3 form-group hidden _hidden"><div><a data-bs-toggle="tooltip" class="ms-1 text-primary cursor-pointer hint-tooltip d-none"><i class="bi bi-info-circle-fill"></i></a></div><input class="form-control form-control-sm hidden" name="hdn1" value="" autocomplete="off" type="hidden" id="hidden" /></div>
+
+                  </fieldset>
+            </div>
+
+            <div class="row mb-3 d-print-none">
+              <div class="col-md-auto mx-auto">
+                <div class="form-check">
+                  <input class="form-check-input" id="acceptTermOfService" type="checkbox" required>
+                  <label class="form-check-label" for="acceptTermOfService">
+                    คลิกเพื่อยอมรับเงื่อนไขการให้บริการดำเนินการทุกครั้ง
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center d-print-none">
+              <div class="col-md-2">
+                <button class="btn btn-outline-secondary w-100" type="button" onclick="history.back()">ย้อนกลับ</button>
+              </div>
+              <div class="col-md-2 d-none">
+                <button class="btn btn-outline-primary w-100" type="button" onclick="window.print()">สรุปรายละเอียด</button>
+              </div>
+              <div class="col-md-2 d-none">
+                <button class="btn btn-outline-secondary w-100" type="button" data-action="click->eform#submitDraft">บันทึกร่าง</button>
+              </div>
+              <div class="col-md-2">
+                <input class="btn btn-success text-white w-100" type="submit" name="commit" value="ส่งคำร้อง">
+              </div>
+            </div>
+
+            <div class="modal fade" id="dataSummaryModal" tabindex="-1" aria-labelledby="dataSummaryModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="dataSummaryModalLabel">ข้อมูลคำร้อง</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" data-eform-target="dataSummary"></div>
+                  <div class="modal-footer w-100 d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-dark" data-action="click->eform#previewJson">Test JSON</button>
+                    <button type="button" class="btn btn-primary text-white" data-action="click->eform#confirmSubmit">ยืนยันการส่งคำร้อง</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+</form>        </main>
+      </div>
+
+      <footer id="bizportal-footer" class="border-top text-muted p-3 mt-5 bg-dark">
+        <div class="container">
+          <p class="mb-0 fs-6 text-white"><small>สงวนลิขสิทธิ์ พ.ศ. 2564 ตามพระราชบัญญัติลิขสิทธิ์ 2537 สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน)</small></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

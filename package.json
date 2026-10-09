@@ -1,0 +1,52 @@
+{
+  "name": "eform-standalone",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env scripts/dev.mjs",
+    "dev:api": "tsx watch --tsconfig tsconfig.server.json server/main.ts",
+    "dev:web": "vite",
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "start": "node --env-file=.env server-dist/main.js",
+    "test": "TSX_TSCONFIG_PATH=tsconfig.server.json node --env-file=.env --import tsx --test test/*.test.js test/*.test.ts"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@nestjs/common": "^11.1.16",
+    "@nestjs/core": "^11.1.16",
+    "@nestjs/platform-express": "^11.1.16",
+    "@popperjs/core": "^2.11.6",
+    "@rails/actioncable": "^7.0.4-3",
+    "@rails/actiontext": "^7.0.4-3",
+    "@rails/request.js": "^0.0.8",
+    "@rails/ujs": "^7.0.4-3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.10.3",
+    "cable_ready": "5.0.0-pre8",
+    "choices.js": "^10.2.0",
+    "cropperjs": "^1.5.13",
+    "dropzone": "^6.0.0-beta.2",
+    "jquery": "^3.6.4",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "sass": "^1.58.3",
+    "select2": "^4.0.0",
+    "sortablejs": "^1.15.0",
+    "stimulus-datepicker": "^1.0.1",
+    "stimulus-rails-nested-form": "^4.1.0",
+    "stimulus-sortable": "^4.1.0",
+    "stimulus_reflex": "^3.5.0-rc2",
+    "sweetalert2": "^11.7.3",
+    "trix": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite": "^5.4.0"
+  }
+}

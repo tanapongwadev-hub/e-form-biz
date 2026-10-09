@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>ไม่พบหน้าที่ค้นหา | BizPortal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        font-family: "Sarabun", sans-serif;
+        color: #212529;
+        background: #fff;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .page {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .container {
+        width: min(100% - 32px, 1140px);
+        margin-inline: auto;
+      }
+
+      .governance {
+        padding-block: 4px;
+        color: #fff;
+        background: #5ca1bf;
+        text-align: right;
+      }
+
+      .governance small { font-size: .82rem; }
+
+      nav {
+        padding-block: 8px;
+        background: #fff;
+        border-bottom: 1px solid #dee2e6;
+      }
+
+      .logo { display: block; width: 90px; height: auto; }
+
+      main {
+        display: grid;
+        flex: 1;
+        place-items: center;
+        padding-block: 64px;
+      }
+
+      .error {
+        max-width: 680px;
+        text-align: center;
+      }
+
+      .code {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        color: #5ca1bf;
+        font-size: clamp(6rem, 22vw, 11rem);
+        font-weight: 500;
+        line-height: .85;
+        letter-spacing: -.06em;
+      }
+
+      .code::after {
+        position: absolute;
+        right: -20px;
+        bottom: -14px;
+        width: 56px;
+        height: 56px;
+        content: "";
+        background: #f5bd43;
+        border-radius: 50%;
+        opacity: .9;
+        z-index: -1;
+      }
+
+      h1 {
+        margin: 28px 0 12px;
+        color: #5ca1bf;
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0 auto;
+        color: #6c757d;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      button {
+        min-height: 42px;
+        margin-top: 28px;
+        padding: 8px 22px;
+        color: #fff;
+        background: #5ca1bf;
+        border: 1px solid #5ca1bf;
+        border-radius: 4px;
+        font: 500 1rem "Sarabun", sans-serif;
+        cursor: pointer;
+      }
+
+      button:hover { background: #4b8da9; border-color: #4786a1; }
+      button:focus-visible { outline: 3px solid rgba(92, 161, 191, .35); outline-offset: 3px; }
+
+      footer {
+        padding-block: 18px;
+        color: #fff;
+        background: #212529;
+      }
+
+      footer small { font-size: .82rem; }
+      footer a { color: inherit; }
+
+      @media (max-width: 576px) {
+        .governance { text-align: center; }
+        main { padding-block: 48px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="governance">
+          <div class="container"><small>เว็บไซต์นี้อยู่ภายใต้การกำกับดูแลของสำนักนายกรัฐมนตรี</small></div>
+        </div>
+        <nav>
+          <div class="container">
+            <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAABWCAMAAADSW3WyAAAA9lBMVEX////+/v79/f36/P34+Pj1+fv39/fy9/jr8vXx8fHq8/fv7+/o7/Pg7fPn5+fb5+zX5OrW5OnX6O/g4ODS4efW5+/f39/Y2NjM4evX19fD19/C3OfB3OfPz8+31uPHx8evydSuydSu0N/AwMCt0N+/v7+cvMq4uLijytu3t7eZxNewsLCYxNevr6+LscGHrr+Hrr+PvtOoqKiOvtOnp6eFuM+goKCEuM6fn590obV2qb96ssuYmJh5sMh6ssqXl5dnmK5wrMeQkJBvrMaPj49sqMJglKpfk6pmpL5mpsOIiIhlpsKHh4dRiqJNh6BUlK9cob+AgIBUAO39AAAATnRSTlMAAgQHDhAQEhwcICAhMDAzOTo/P0BAQE9QUFVfYGBwcHJzf3+AgI6PkJCfn6Cgpqusr6+wsL+/wMDHy8/P0NDQ2d/f4ODi4+Tr7+/w8PikX7K+AAAD3ElEQVRo3u3Z6WPSMBQA8HgQldp6rTgclWmpA6HqGKxVcciGB8ew/f//GV/SNk1LKR30+sD7sh4p+ZHkvQBDQxmVIiyrHBLLKofEssohsaxySCyrHBIAGI0bV3JSrAMhTzI5KdZRvMRzFC3xHQjJRnES3lGkJOgoThJ2FCVZdxQjiXIUIYl25C/Z5ADJRZ6SzQ6Eqr38JHEOTiLSU4NtzpNzZjuezd5n7WASOeTwbWgBx2LmDpD8iHZYM5F9gpEzdzx69/Mf72i5uCvyecW7uKhk7Dj6dLtaRTlQhezOVWejblUzXR8wFCsSkQ70NpXp2O6gQxHjkOHqcdYObyhiHI1U0iTW4Q9FjAMW6g09EIfDNr055GJ/R2AoNjrkc8gS2ZsgI/gNBGJvx7PVWgQcE/p2Z3DpRkQZOo62OFi0uQUbeAWycN7m52C7X8hxDLd6KHOH0aJBd52PEQ4RpuwCZe/w8qV64Q1/wFGZWNZVJUcHPZmFHZXvu242uzsa7mXeAdO1EFG+Dnnd0d691qfpICPUQHk7eu4GwxwyX1Vyc5A3v+DXKcnYHsrVUX15cm6F8pakylUlNwcfPb6OyYFbrfwciwYq3nHVY4khGkbb+cNFI1NHjt/n8nc8sW37/t0c0isvhEIdps1i3q+VwgHRLdIxNWlMCUQr0OH1rSzh8YSrRFBVJSsHqsHjzWQOaGpm5kBj2x6UwTGIffX8HCb36pjUlMQOSYV4jdNxYD9hpL6TyH3JuwknCKvXpAWX6LTi0Mu0Ap2l4cAjeNzpt+n3pPoO6dpJ7ZBDGvnn/T0cXTIDqtqd294y7cDRsqNpGqkpHeYAxnig1RAUG1jRNik6hI2XtlmHKamPvXzbu56O6QzX4UjHbGDqnsMeC3yK+4vDTXYMkFEKjqU7Q1NuEWowDNh1TDGKdLBQ3Ku7OUyNhuItyXqgrE7dAYGLCtriqO3lCO8pMART/wzWiu46hI0OSb0kMUrVYQZqg+aeBTsOro9LbnKLcyi0f7Oj6eYyTYcedgxiHRjyfamwt5CeoxnocuDWhI2OJqt+rFE6DoHf/gWvl40OGLAx13iz4+mXP3dykImZS36t11G0AzPH3CfFOCAev/nw9TaxA0PNmKukG+WaVa91R1dAguSUm6a/K8U6SDx4fvr5dyIHkpbO9kmLrIQiHNhpQZ8lJXl0pp6NYMdJ4OAHZosDYVbuBxhFOdxkpc+yxiZO7KDx4vTb31+G86OXommR31okjWynHcnPXy3olXQTPug7z9Z1aKvDcd1p9BAa30vwf7F84uA4OA6Og+PgODiyCMP5Nbjo+A97ehxcO/BhcQAAAABJRU5ErkJggg==" alt="BizPortal" width="90">
+          </div>
+        </nav>
+      </header>
+
+      <main class="container">
+        <section class="error" aria-labelledby="error-title">
+          <p class="code" aria-hidden="true">404</p>
+          <h1 id="error-title">ไม่พบหน้าที่คุณค้นหา</h1>
+          <p>ลิงก์อาจไม่ถูกต้อง หมดอายุ หรือหน้าดังกล่าวถูกย้ายแล้ว<br>กรุณาตรวจสอบที่อยู่เว็บไซต์และลองใหม่อีกครั้ง</p>
+          <button type="button" onclick="history.back()">ย้อนกลับ</button>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container"><small>สงวนลิขสิทธิ์ พ.ศ. 2564 ตามพระราชบัญญัติลิขสิทธิ์ 2537 สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน)c</small></div>
+      </footer>
+    </div>
+  </body>
+</html>

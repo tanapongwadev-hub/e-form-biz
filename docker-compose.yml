@@ -1,0 +1,15 @@
+services:
+  eform:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      FORM_CONFIG_FILE: /data/form-configs.json
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./form-configs.json:/data/form-configs.json
+    restart: unless-stopped

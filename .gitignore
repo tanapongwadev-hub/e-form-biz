@@ -1,0 +1,12 @@
+node_modules
+dist
+.auth-cache.enc
+.auth-cache.enc.*.tmp
+.DS_Store
+
+
+.env
+.env.prod
+
+form-configs.json
+form-configs.*.json

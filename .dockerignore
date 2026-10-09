@@ -1,0 +1,8 @@
+node_modules
+dist
+server-dist
+.env
+form-configs.json
+.auth-cache.enc*
+.git
+.DS_Store
